@@ -1,0 +1,43 @@
+.container {
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+
+  width: 100%;
+  background-color: rgba(89, 89, 87, 1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4.2rem 0;
+
+  & .copy_right {
+    & > p {
+      font-size: 1.8rem;
+      color: rgba(#FFFFFF, 1);
+      font-weight: 500;
+    }
+  }
+
+  & ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+
+    & > li {
+      font-size: 1.8rem;
+      color: rgba(#FFFFFF, 1);
+      font-weight: 500;
+    }
+    & > li:last-child {
+      display: flex;
+      gap: 0 2.5rem;
+      & > a {
+        text-decoration: none;
+      }
+    }
+  }
+
+}

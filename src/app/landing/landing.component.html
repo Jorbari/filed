@@ -1,0 +1,184 @@
+<div class="wrapper">
+
+
+  <section class="container__one">
+
+    <div class="container__one--info">
+      <app-primary-header></app-primary-header>
+
+      <section class="text">
+        <p>
+          <i>Book a demo today and </i> get two weeks for <i><span>free.</span> Why?</i>
+        </p>
+        <p>
+          Because Our AI-Powered Software Will Exceed Your Marketing Goals.
+        </p>
+      </section>
+
+      <section class="mockups">
+
+        <section class="white_balls" >
+          <img src="assets/svg/ball_1.svg" alt="">
+          <img src="assets/svg/ball_2.svg" alt="">
+          <img src="assets/svg/ball_3.svg" alt="">
+        </section>
+
+        <img src="assets/img/phone_mockup.png" alt="Dashboard Snapshot">
+      </section>
+
+    </div>
+
+    <div class="container__one--form">
+
+      <form [formGroup]="userForm" >
+
+        <img src="assets/svg/blue_ball.svg" alt="blue background ball" class="blue__ball">
+        <img src="assets/svg/grid.svg" alt="grid dot design" class="grid_dot">
+
+        <h4>We’ll be in touch to get your trial set up.</h4>
+        <h6>Fill Out Form</h6>
+
+        <div class="form__group grid__2">
+          <section>
+            <input type="text" class="form__control" placeholder="First Name *" formControlName="firstName">
+            <span class="error_" *ngIf="firstName.invalid && firstName.dirty">Please input first name</span>
+          </section>
+          <section>
+            <input type="text" class="form__control" placeholder="Last Name *" formControlName="lastName">
+            <span class="error_" *ngIf="lastName.invalid && lastName.dirty">please input last name</span>
+          </section>
+        </div>
+
+        <div class="form__group">
+          <input type="text" class="form__control" placeholder="Work Email *" formControlName="email">
+          <span class="error_" *ngIf="email.invalid && email.dirty">please input valid work email</span>
+        </div>
+
+        <div class="form__group">
+          <input type="number" min="0" class="form__control" placeholder="Monthly Advertising Budget *" formControlName="budget">
+          <span class="error_" *ngIf="budget.invalid && budget.dirty">input montly budget</span>
+        </div>
+
+        <div class="form__group form__control grid__2 country_number">
+          <section>
+            <select class="form__control" formControlName="country">
+              <option value="" disabled selected>Select a country</option>
+              <option [value]="country?.long_name" *ngFor="let country of countries">{{country?.long_name}}({{country?.short_name}})</option>
+            </select>
+            <span class="error_" *ngIf="country.invalid && country.dirty">Please select a country</span>
+          </section>
+          <section>
+            <input class="form__control" type="tel" placeholder="+40" formControlName="phone">
+            <span class="error_" *ngIf="phone.invalid && phone.dirty">Input your mobile number</span>
+          </section>
+        </div>
+
+        <div class="form__group">
+          <button class="btn" (click)="saveUserInformation()" [disabled]="userForm.invalid" >GET FREE TRIAL</button>
+        </div>
+
+      </form>
+
+    </div>
+
+
+  </section>
+
+  <section class="container__two">
+    <p>
+      Our Offer: Intelligent Automation. Real-time Insights. Unparalleled Results.
+    </p>
+  </section>
+
+  <section class="container__three">
+
+    <div class="container__three--left">
+      <h3>The <span>Benefits</span> of using Filed </h3>
+    </div>
+    <ul class="container__three--right">
+      <li>Ability to scale using Dexter, our AI-powered marketing genius.</li>
+      <li>Client Success Manager who will optimize your Facebook ad campaigns and focus on driving the best possible results for you.</li>
+      <li>This is a limited time offer only.</li>
+    </ul>
+
+  </section>
+
+  <section class="container__four">
+
+    <div class="testimonials">
+
+      <div class="testimonials__title">
+        <img src="assets/svg/quote.svg" alt="Quotation mark icon">
+        <h4>"It surpassed our expectations"</h4>
+      </div>
+
+      <div class="testimonials__summary">
+        <p>
+          "Filed has completely surpassed our expectations.
+          I will refer everyone I know. Filed is worth much more than I paid."
+        </p>
+      </div>
+
+      <div class="testimonials__info">
+        <img src="assets/img/testimonial_1.jpg" alt="Quotation mark icon">
+        <section>
+          <h6>Tania Y.</h6>
+          <p>Flexi Content @Hello</p>
+        </section>
+      </div>
+
+    </div>
+
+    <div class="testimonials">
+
+      <div class="testimonials__title">
+        <img src="assets/svg/quote.svg" alt="Quotation mark icon">
+        <h4>“The essential marketing tool”</h4>
+      </div>
+
+      <div class="testimonials__summary">
+        <p>
+          “Filed is the most valuable business resource we have EVER purchased.
+          I was amazed at the quality of filed. We were treated like royalty.”
+        </p>
+      </div>
+
+      <div class="testimonials__info">
+        <img src="assets/img/testimonial_2.jpg" alt="Quotation mark icon">
+        <section>
+          <h6>Jack Francis</h6>
+          <p>Manager @Accidents</p>
+        </section>
+      </div>
+
+    </div>
+
+    <div class="testimonials">
+
+      <div class="testimonials__title">
+        <img src="assets/svg/quote.svg" alt="Quotation mark icon">
+        <h4>“Your company is truly upstanding”</h4>
+      </div>
+
+      <div class="testimonials__summary">
+        <p>
+          “The service was excellent. After using filed my business skyrocketed!
+          It really saves me time and effort.”
+        </p>
+      </div>
+
+      <div class="testimonials__info">
+        <img src="assets/img/testimonial_3.jpg" alt="Quotation mark icon">
+        <section>
+          <h6>Dawna N.</h6>
+          <p>Editor @ Museum of Typography</p>
+        </section>
+      </div>
+
+    </div>
+
+  </section>
+
+  <app-primary-footer></app-primary-footer>
+
+</div>

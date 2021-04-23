@@ -1,0 +1,41 @@
+.form__control {
+  background-color: rgba(#ffffff, 1);
+  border-radius: 1rem;
+  border: 1px solid #DEDEDE;
+  padding: 1.28rem 2.36rem;
+  width: 100%;
+  height: 4.8rem;
+  font-size: 1.6rem;
+
+  &::placeholder {
+    color: rgba(#000000, 1);
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+}
+
+.btn {
+  background: rgba(255, 110, 78, 1);
+  box-shadow: 0px .4rem .8rem rgba(0, 0, 0, 0.16);
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  height: 4.8rem;
+  border: none;
+  border-radius: 1rem;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.6px;
+  transition: all .3s ease-in;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+}
+.error_ {
+  font-size: 1.5rem;
+  color: red;
+  display: block;
+  font-style: italic;
+}

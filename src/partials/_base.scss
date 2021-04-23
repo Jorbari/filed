@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+
+  @media screen and (min-width: 1859px) {
+    font-size: 62.5%;
+  }
+
+  @media screen and (min-width: 1620px) and (max-width: 1858px) {
+    font-size: 54%;
+  }
+
+  @media screen and (min-width: 1521px) and (max-width: 1619px) {
+    font-size: 50.8%;
+  }
+
+  @media screen and (min-width: 1438px) and (max-width: 1520px) {
+    font-size: 47%;
+  }
+
+  @media screen and (min-width: 1268px) and (max-width: 1437px) {
+    font-size: 43%;
+  }
+
+  @media screen and (min-width: 1030px) and (max-width: 1267px) {
+    font-size: 33%;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1029px) {
+    font-size: 34%;
+  }
+
+  @media screen and (min-width: 894px) and (max-width: 1023px) {
+    font-size: 28%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 893px) {
+    font-size: 25%;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 20%;
+  }
+
+}
+
+body {
+  box-sizing: border-box;
+}
